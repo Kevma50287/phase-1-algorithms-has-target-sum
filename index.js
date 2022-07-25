@@ -17,6 +17,9 @@ function hasTargetSum(array, target) {
 
 /* 
   Write the Big O time complexity of your function here
+
+  For each element N, we will need to iterate through the entire array to sum and add numbers. 
+  Since we compare N number of elements N number of times, the time complexity of this algo is O(n^2) 
 */
 
 /* 
