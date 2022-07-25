@@ -1,5 +1,18 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  let res = false
+
+  while (array.length > 0){
+    let lastNum = array.pop()
+    array.forEach(element => {
+      if (lastNum + element == target){
+        res = true
+      }
+    });
+  }
+
+  return res
+  
 }
 
 /* 
@@ -8,6 +21,11 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+
+  1. Create a variable equal to the last element of the array using the pop function
+  3. Use a for loop to iterate through each element of the array and add it to variable
+  4. If the sum is equal to the target, return true, else false
+
 */
 
 /*
